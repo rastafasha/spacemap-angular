@@ -24,16 +24,14 @@
     align-items: center;
 }
 
-.btn{
+.searchgroup .btn{
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     height: 40px;
 }
 
 .circle{
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,4 +43,18 @@
     max-height: 300px;
     overflow-y: auto;
     margin-top: 10px;
+}
+
+.list ul li{
+    background-color: var(--azul-oscuro); 
+    margin-bottom: 1px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.list ul li:hover{
+    background-color: var(--azul-claro); 
 }

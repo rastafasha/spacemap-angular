@@ -54,6 +54,15 @@ export class PaisService {
       catchError(this.handleError)
     )
   }
+  getPaisesRecientes(): Observable<any>  {
+    return this.http.get<PaisResponsive>(this.serverUrl + '/paises/recientes')
+    .pipe(
+      map( resp => {
+        return resp;
+      }),
+      catchError(this.handleError)
+    )
+  }
 
   getPaisDetail(code:string){
 
@@ -71,10 +80,9 @@ export class PaisService {
   }
 
   search(query=''){
-    return this.http.get(`${this.serverUrl}/pais/search`, {params: {buscar: query}})
+    return this.http.get(`${this.serverUrl}/pais/search/buscar`, {params: {buscar: query}})
 
   }
-
 
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

@@ -55,9 +55,9 @@ public user;
 
   getPaises(){
     this.isLoading = true;
-    this.paisService.getPaises().subscribe((resp: any) => {
+    this.paisService.getPaisesRecientes().subscribe((resp: any) => {
       this.paises = resp.countries;
-      // console.log(this.paises);
+      console.log(this.paises);
       this.isLoading = false;
     });
   }

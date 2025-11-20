@@ -36,15 +36,24 @@
 
 /* menu lateral */
 
-@import url("topeSocial.css");
-@import url("datos-victimas.css");
 @import url("modales-info.css");
-@import url("mouseicon.css");
+/* @import url("mouseicon.css"); */
 @import url("menusegundario.css");
-@import url("grids.css");
 @import url("redcdlhStyle.css");
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root {
     --azul-oscuro: #16192A;
+    --azul-oscuro-transparente: #16192ac2;
     --azul-claro: #21436d;
     --mapa-fondo: #43537B;
     --mapa-borde: #72c0ff;
@@ -55,6 +64,14 @@
     --azullogo: #72c0ff;
     --fondopage:#f5f5f5;
     --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: var(--azul-oscuro);
+    color: var(--font-color);
+    line-height: 1.6;
 }
 
 .shadow {

@@ -44,10 +44,11 @@
                 <div class="clear"></div>
             <div class="list">
                 <app-loading *ngIf="isLoading"></app-loading>
-                <div *ngIf="!isLoading">
-                    <ul *ngFor="let pais of paises ; let i = index" >
-                        <li>{{pais.title}}
-                            <button class="btn" (click)="selectedDireccion(pais)"> + info</button>
+                <div *ngIf="!isLoading && paises">
+                    <h5 style="border-bottom: 1px dashed var(--azullogo); ">Paises Actualizados Recientes</h5>
+                    <ul *ngFor="let pais of paises | slice:0:5; let i = index " >
+                        <li >{{pais.title}}
+                            <button class="btn btn-primary btn-sm" (click)="selectedDireccion(pais)"> + info</button>
                         </li>
                     </ul>
 

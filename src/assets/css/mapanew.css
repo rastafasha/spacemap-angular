@@ -10,6 +10,7 @@ background: radial-gradient(circle,rgba(31, 35, 59, 1) 0%, rgba(31, 35, 59, 1) 4
     margin: 0;
     width: 100vw;
     height: 100vh;
+    box-sizing: content-box;
 }
 .fodo_cruces{
     background-image: url('../svg/cruces.svg');
@@ -102,7 +103,7 @@ background: radial-gradient(circle,rgba(31, 35, 59, 1) 0%, rgba(31, 35, 59, 1) 4
     display: flex;
     opacity: 0.3;
     cursor: pointer;
-    width: 752px;
+    /* width: 752px; */
     height: 33px;
     
 }
@@ -221,7 +222,7 @@ background: radial-gradient(circle,rgba(31, 35, 59, 1) 0%, rgba(31, 35, 59, 1) 4
 
     .menu_completo{
         bottom: 70px;
-        right: calc(-140px);
+        right: calc(100px);
         
     }
 }
@@ -260,7 +261,7 @@ background: radial-gradient(circle,rgba(31, 35, 59, 1) 0%, rgba(31, 35, 59, 1) 4
 
     .menu_completo{
         bottom: 20px;
-        right: calc(-140px);
+        right: calc(100px);
         
     }
     
@@ -280,7 +281,7 @@ background: radial-gradient(circle,rgba(31, 35, 59, 1) 0%, rgba(31, 35, 59, 1) 4
 
     .menu_completo{
         bottom: 70px;
-        right: calc(-90px);
+        right: calc(90px);
         
     }
 }
