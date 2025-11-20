@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 752.24 44.55">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #b1b1b1;
+        font-family: Futura-Medium, Futura;
+        font-size: 15.82px;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: .02em;
+      }
+
+      .cls-5 {
+        fill: #617388;
+        stroke: #666;
+        stroke-width: .48px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-7 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-6 {
+        opacity: .19;
+        stroke: #f0f0f0;
+        stroke-width: .27px;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g id="menu">
+    <g>
+      <g>
+        <rect class="cls-6" x="38.48" y="14.74" width="80.65" height="21.5"/>
+        <text class="cls-2" transform="translate(52.23 30.71)"><tspan x="0" y="0">HOME</tspan></text>
+        <polygon class="cls-5" points="34.01 34.52 34.01 15.02 17.13 5.27 .24 15.02 .24 34.52 17.13 44.27 34.01 34.52"/>
+      </g>
+      <g>
+        <text class="cls-2" transform="translate(179.29 30.29)"><tspan class="cls-4" x="0" y="0">C</tspan><tspan x="11.37" y="0">ALEN</tspan><tspan class="cls-8" x="52.4" y="0">D</tspan><tspan x="63.3" y="0">AR</tspan></text>
+        <polygon class="cls-5" points="161.07 34.11 161.07 14.61 144.18 4.86 127.29 14.61 127.29 34.11 144.18 43.86 161.07 34.11"/>
+      </g>
+      <g>
+        <text class="cls-2" transform="translate(345.23 28.71)"><tspan class="cls-4" x="0" y="0">C</tspan><tspan class="cls-7" x="11.37" y="0">A</tspan><tspan x="22.42" y="0">TEGORIES</tspan></text>
+        <polygon class="cls-5" points="327.01 32.52 327.01 13.02 310.13 3.27 293.24 13.02 293.24 32.52 310.13 42.27 327.01 32.52"/>
+      </g>
+      <g>
+        <text class="cls-2" transform="translate(523.23 25.71)"><tspan x="0" y="0">A</tspan><tspan class="cls-1" x="11.72" y="0">B</tspan><tspan class="cls-3" x="20.98" y="0">OUT US</tspan></text>
+        <polygon class="cls-5" points="505.01 29.52 505.01 10.02 488.13 .27 471.24 10.02 471.24 29.52 488.13 39.27 505.01 29.52"/>
+      </g>
+      <g>
+        <text class="cls-2" transform="translate(700.23 25.71)"><tspan class="cls-9" x="0" y="0">L</tspan><tspan x="6.53" y="0">OGIN</tspan></text>
+        <polygon class="cls-5" points="682.01 29.52 682.01 10.02 665.13 .27 648.24 10.02 648.24 29.52 665.13 39.27 682.01 29.52"/>
+      </g>
+    </g>
+  </g>
+</svg>

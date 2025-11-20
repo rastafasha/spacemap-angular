@@ -1,0 +1,63 @@
+<header>
+    <div id="pagewrap">
+        <p id="back-top" style="display: block;">
+            <a href="#top">
+            </a>
+        </p>
+    </div>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <ul>
+            <li><a routerLink="/" class="cmn-t-underline">Home</a></li>
+            <li><a routerLink="prensa" class="cmn-t-underline">Prensa</a></li>
+            <li><a href="/admin/" target="_blank" class="cmn-t-underline">Ingresar</a></li>
+
+        </ul>
+
+    </nav>
+
+    <div class="clear"></div>
+    <div class="container  tttt logoo" style="display: block;">
+        <div class="sli header texto ttt1 animated fadeInUp" id="sli1">
+            <!-- buscador -->
+            <form class="" role="search" (ngSubmit)="search()">
+                <div class="input-group searchgroup">
+                    <!-- [(ngModel)]="query" -->
+                    <input type="search" name="search" type="text" class="form-control col-xs-12" placeholder="Buscar.."
+                        aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                    <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-link text-primary circle"
+                            (click)="search()" name="submit" data-toggle="tooltip" title="mostrar todos"><i
+                                class="fa fa-search"></i></button>
+                        <button id="button-addon1" type="button" class="btn btn-link text-primary circle"
+                            (click)="PageSize()" name="submit" data-toggle="tooltip" title="refrescar">
+                            <i class="fa fa-refresh"></i>
+                        </button>
+                        <!-- <button id="button-addon1" type="button" class="btn btn-link text-primary circle"
+                            (click)="openMenu()" name="submit" data-toggle="tooltip" title="refrescar">
+                            <i class="fa fa-bars"></i>
+                        </button> -->
+                        <!-- <a href="javascript:;" (click)="PageSize()"
+                            class="btn btn-primary doctor-refresh ms-2 circle"><i class="fa fa-refresh"></i></a> -->
+                    </div>
+                </div>
+            </form>
+            <!-- buscador -->
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="container tttt">
+        <div class="sli header ttt1">
+            <div class="logocompleto "></div>
+
+        </div>
+        <!-- <a routerLink="home">
+
+        </a> -->
+    </div>
+</header>
+
+<!-- <div class="main">
+    <div class="container">
+        <div id="showRightPush" class="menn" (click)="openMenu()">&#9776; </div>
+    </div>
+</div> -->

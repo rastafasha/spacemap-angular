@@ -1,0 +1,87 @@
+<!-- <app-slider></app-slider> -->
+<!-- <app-video></app-video> -->
+
+
+<!-- <section class="mantengase sli flex " id="sli3">
+    <app-mapa></app-mapa>
+</section> -->
+<section class="fondo degrade animated fadeInBig">
+    <div class="fodo_cruces">
+        <div class="bordes">
+            <div class="border_top animated fadeInDown"></div>
+            <div class="border_rigth animated fadeInRight"></div>
+            <div class="border_left animated fadeInLeft"></div>
+            <div class="border_button animated fadeInUp"></div>
+        </div>
+        <div class="container">
+            <a routerLink="/" >
+                <div class="info-logo ">
+                    <div class="img-logo animated fadeInBig"></div>
+                    <div class="inf animated fadeInLeft">
+                        <h1>GLOBAL EXPLORER</h1>
+                        <p>Discover Activities Around the world</p>
+                    </div>
+                </div>
+
+            </a>
+            <div class="menu_completo animated fadeInUp">
+                <ul>
+                    <li ><a routerLink="/" >Home</a></li>
+                    <li ><a href="#sli2">Activities</a></li>
+                    <li ><a href="#sli3">Map</a></li>
+                    <li ><a href="#sli4">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mapa animated fadeIn">
+                <!-- <div class="icono_vela"></div> -->
+                <app-mapa></app-mapa>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!---modulo lateral-->
+<section class="soluciones sli flex hom displayNonehome ">
+    <div class="container">
+        <!-- ============================================================== -->
+        <!-- Informacion  -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div ngclass="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex no-block">
+                            <div class="m-r-20 "></div>
+                            <div class="align-self-center">
+
+                                <app-lista-paises></app-lista-paises>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---// modulo lateral-->
+
+<!-- <div class="indicaciones">
+    <h1>Indicaciones</h1>
+                <p>Para obtener más información sobre los eventos, haga clic en los paises marcados</p>
+                <p>{{ year }} Sin Mordaza Org. | All Rights Reserved</p>
+</div> -->
+
+
+<script>
+    //info lateral
+    $(document).ready(main);
+
+    function main() {
+        $('#paperRegions').hide();
+    }
+</script>
