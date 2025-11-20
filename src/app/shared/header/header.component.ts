@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MapaService } from 'src/app/services/services/mapa.service';
+import { PaisService } from 'src/app/services/services/pais.service';
 
 @Component({
   selector: 'app-header',
@@ -11,11 +13,18 @@ export class HeaderComponent implements OnInit {
   public links: NodeListOf<Element>; //obtiene clase del div
 public user;
   query: string = '';
-  constructor() { }
+  paises: any[] = [];
+
+  isLoading:boolean= false;
+  constructor(
+    private paisService: PaisService,
+    private mapaService: MapaService,
+  ) { }
 
   classie:any;
 
   ngOnInit(): void {
+    this.getPaises()
     //this.links = document.querySelectorAll('.selector');//obtiene clase del div // se dispara despues de inicializado el componente
   }
 
@@ -31,17 +40,36 @@ public user;
   }
 
   search() {
-    // return this.paymentService.search(this.query).subscribe((res: any) => {
-    //   this.payments = res;
-    //   if (!this.query) {
-    //     this.ngOnInit();
-    //   }
-    // });
+    return this.paisService.search(this.query).subscribe((res: any) => {
+      this.paises = res;
+      if (!this.query) {
+        this.ngOnInit();
+      }
+    });
   }
 
   public PageSize(): void {
-    // this.getPagos();
-    // this.query = '';
+    this.getPaises();
+    this.query = '';
+  }
+
+  getPaises(){
+    this.isLoading = true;
+    this.paisService.getPaises().subscribe((resp: any) => {
+      this.paises = resp.countries;
+      // console.log(this.paises);
+      this.isLoading = false;
+    });
+  }
+
+  selectedDireccion(pais){
+    //llamamos el id seleccionado
+    console.log(pais)
+    this.mapaService.filter(pais.code);
+    
+    // const idAttr = pais.srcElement.attributes.id;
+    // const value = idAttr.nodeValue;
+    // this.mapaService.filter(value);
   }
 
 

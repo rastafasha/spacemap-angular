@@ -38,3 +38,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.list{
+    width: max-content;
+    color: var(--azullogo);
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}

@@ -63,12 +63,12 @@ export class MapaComponent  implements OnInit{
   }
 
   activarBotonColor(): void {
-    this.isLoading = true;
+    // this.isLoading = true;
     this.paisService.getPaises().subscribe((resp: any) => {
       this.paises = resp.countries;
       // console.log(this.paises);
+      // this.isLoading = false;
       this.highlightActiveCountries();
-      this.isLoading = false;
     });
   }
   
