@@ -1,54 +1,64 @@
 <!-- *ngFor="let pais of paisrespuesta; let i=index" -->
-<div >
-    <div class="row ">
-        
+<div>
+    <div class="row " *ngIf="paisrespuesta">
+
         <div class="col-xs-12 lista">
             <div class="border_top animated fadeInDown"></div>
-            
+
             <div class="tope">
-                <h6 class=" m-t-10 m-b-0"><span class="text-muted">{{paisrespuesta?.code }} |</span> {{paisrespuesta?.title }}</h6>
+                <div class="icono_vela"></div>
+                <h6 class=" m-t-10 m-b-0"><span class="text-muted">{{paisrespuesta?.code }} |</span>
+                    {{paisrespuesta?.title }}</h6>
                 <!-- <h2 class="m-t-0"></h2> -->
                 <p [innerHTML]="paisrespuesta?.informacion"> </p>
-                <button *ngIf="!tareaSelected" class="btn btn-primary btn-sm"(click)="hideInfo()">X</button>
+                <button *ngIf="!tareaSelected" class="btn btn-primary btn-sm" (click)="hideInfo()">X</button>
             </div>
             <hr>
-            <h6 *ngIf="!tareaSelected">Ciudades ({{ciudadesList.length}})</h6>
+            <h6 *ngIf="!tareaSelected">Ciudades ({{ciudadesList.length}}) </h6>
 
-                <div *ngIf="!tareaSelected" class="listaciudad">
-                    <div *ngIf="!ciudadesList || ciudadesList === null">
-                        <h2>no info</h2>
-                    </div>
-                    <!-- | orderByJson: 'ciudad' -->
-                    <div *ngIf="ciudadesList">
-                        <ul *ngFor="let ciud of ciudadesList ; let i = index">
-                            <li>{{ciud.ciudad}} 
-                                <button class="btn btn-primary btn-sm" (click)="selectedDireccion(ciud)"> + info</button>
-                            </li>
-                        </ul>
-                    </div>
-                    
+            <div *ngIf="!tareaSelected" class="listaciudad">
+                <div *ngIf="!ciudadesList || ciudadesList === null">
+                    <h2>no info</h2>
                 </div>
-                <div *ngIf="tareaSelected">
-                    
-            
-                    <button class="btn btn-primary btn-sm mb-2" (click)="tareaSelected = null">Regresar</button>
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./assets/img/iphone17.jpg" class="img-responsive" alt="">
-                            <h4 class="text-muted">Ciudad:</h4>
+                <!-- | orderByJson: 'ciudad' -->
+                <div *ngIf="ciudadesList">
+                    <ul *ngFor="let ciud of ciudadesList ; let i = index">
+                        <li>{{ciud.ciudad}}
+                            <button class="btn btn-primary btn-sm" (click)="selectedDireccion(ciud)"> + info</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div *ngIf="tareaSelected">
+
+
+                <button class="btn btn-primary btn-sm " style="float: right; margin-bottom: 5px;"
+                    (click)="tareaSelected = null">Regresar</button>
+                <div class="clear"></div>
+                <div class="card">
+                    <div class="card-body infomapapais">
+                        <!-- <img src="./assets/img/iphone17.jpg" class="img-responsive" alt=""> -->
+                        <div class="city">
+                            <h5 class="text-muted">Ciudad:</h5>
                             <p>{{tareaSelected.ciudad}}</p>
-                            <h4 class="text-muted"> Hora:</h4>
+                        </div>
+                        <div class="time">
+                            <h5 class="text-muted"> Hora:</h5>
                             <p>{{tareaSelected.hora}} </p>
-                            <h4 class="text-muted"> Ubicación:</h4>
+                        </div>
+                        <div class="address">
+                            <h5 class="text-muted"> Ubicación:</h5>
                             <p> {{tareaSelected.ubicacion}}</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div *ngIf="tareaSelected">
+            </div>
+            <!-- <div *ngIf="tareaSelected">
                     <button class="btn btn-primary btn-sm" (click)="tareaSelected = null">Regresar</button>
                 </div> -->
 
-                <div class="border_button animated fadeInUp"></div>
+            <div class="border_button animated fadeInUp"></div>
         </div>
     </div>
 </div>

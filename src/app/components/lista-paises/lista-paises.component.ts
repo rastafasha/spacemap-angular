@@ -69,13 +69,13 @@ public paises: PaisResponsive;
         (resp:any) => {
 
           this.paisrespuesta = resp.pais;
-          console.log(this.paisrespuesta);
+          // console.log(this.paisrespuesta);
 
           this.ciudades = resp.ciudades[0] ? resp.ciudades[0] : null;
           if (this.ciudades !== null) {
             let jsonObj = JSON.parse(this.ciudades);
             this.ciudadesList = jsonObj;
-            console.log(this.ciudadesList);
+            // console.log(this.ciudadesList);
           } else {
             this.ciudadesList = []; // or some default value
           }
@@ -115,6 +115,12 @@ public paises: PaisResponsive;
 
 
   showInfo() {
+
+    if(this.paisrespuesta === null || !this.paisrespuesta ){
+      this.paisrespuesta = null;
+      this.ciudadesList = [];
+      return;
+    }
     // Get the elements using document.querySelectorAll, which returns a NodeList
     const infoRespuesta = document.querySelectorAll(".hom");
     const logomove = document.querySelectorAll(".logo2");
@@ -145,6 +151,10 @@ hideInfo() {
     // Remove the class "displayNonehome" from each element
     info.classList.add("displayNonehome");
   });
+
+  this.paisrespuesta = null;
+  this.ciudadesList = [];
+
 }
 
   

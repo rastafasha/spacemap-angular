@@ -32,7 +32,7 @@
     margin: 3px 0px;
     background-color: var(--azul-oscuro);
     color: var(--azullogo);
-    border-bottom: 1px dashed #ccc;
+    border-bottom: 1px dashed #202020;
 }
 
 .tope{
@@ -41,6 +41,27 @@
     justify-content: space-between;
     
     background-size: cover;
+}
+
+.infomapapais{
+    background-color: var(--azul-oscuro); 
+    padding: 5px;
+    color: var(--azullogo);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border: 1px dotted #1b1a1a ;
+    gap: 5px;
+}
+
+.city h5,
+.city p ,
+.time h5,
+.time p,
+.address h5,
+.address p{
+    margin: 2px 0px;
+    padding: 0px;
+    color: var(--azullogo);
 }
 
 @media(max-width:768px){

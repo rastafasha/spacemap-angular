@@ -20,6 +20,7 @@
         <div class="sli header texto ttt1 animated fadeInUp" id="sli1">
             <!-- buscador -->
             <form class="" >
+                <!-- <div class="border_top animated fadeInDown"></div> -->
                 <div class="input-group searchgroup">
                     
                     <input type="search" [(ngModel)]="query" name="search" type="text" class="form-control col-xs-12" placeholder="Buscar.."
@@ -45,9 +46,10 @@
             <div class="list">
                 <app-loading *ngIf="isLoading"></app-loading>
                 <div *ngIf="!isLoading && paises">
+                    
                     <h5 style="border-bottom: 1px dashed var(--azullogo); ">Paises Actualizados Recientes</h5>
                     <ul *ngFor="let pais of paises | slice:0:5; let i = index " >
-                        <li >{{pais.title}}
+                        <li ><div class="icono_vela" style="width: 25px; height: 25px;"></div> {{pais.title}}
                             <button class="btn btn-primary btn-sm" (click)="selectedDireccion(pais)"> + info</button>
                         </li>
                     </ul>
