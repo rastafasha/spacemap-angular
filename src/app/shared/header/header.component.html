@@ -43,19 +43,27 @@
                 </div>
 
                 <div class="clear"></div>
-            <div class="list">
+                
                 <app-loading *ngIf="isLoading"></app-loading>
-                <div *ngIf="!isLoading && paises">
-                    
-                    <h5 style="border-bottom: 1px dashed var(--azullogo); ">Paises Actualizados Recientes</h5>
-                    <ul *ngFor="let pais of paises | slice:0:5; let i = index " >
-                        <li ><div class="icono_vela" style="width: 25px; height: 25px;"></div> {{pais.title}}
-                            <button class="btn btn-primary btn-sm" (click)="selectedDireccion(pais)"> + info</button>
-                        </li>
-                    </ul>
+                <details *ngIf="!isLoading && paises">
+                    <summary>
+                        <div style="display: flex; align-items: center; gap: 10px; ">
+                            <h5 style="border-bottom: 1px dashed var(--azullogo); color: var(--azullogo); cursor: pointer;">Paises Actualizados Recientes</h5> <i  style="color: var(--azullogo); cursor: pointer;"class="fa fa-arrow-down"></i>
+                        </div>
+                    </summary>
+                    <div class="list">
+                        <div >
+                            
+                            <ul *ngFor="let pais of paises; let i = index " >
+                                <li (click)="selectedDireccion(pais)" ><div class="icono_vela" style="width: 25px; height: 25px;"></div> {{pais.title}}
+                                    <button class="btn btn-primary btn-sm" (click)="selectedDireccion(pais)"> + info</button>
+                                </li>
+                            </ul>
+        
+                        </div>
+                    </div>
 
-                </div>
-            </div>
+                </details>
             </form>
             <!-- buscador -->
             

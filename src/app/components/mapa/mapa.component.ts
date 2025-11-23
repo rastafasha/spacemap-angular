@@ -49,7 +49,13 @@ export class MapaComponent  implements OnInit{
     }
 
   ngOnInit() {
-    this.activarBotonColor();
+    this.getPaisBotonColor();
+
+    this.mapaService.listen().subscribe(event => {
+      if (event === 'refreshPaisBotonColor') {
+        this.getPaisBotonColor();
+      }
+    });
   }
 
 
@@ -62,12 +68,12 @@ export class MapaComponent  implements OnInit{
     // console.log(value);
   }
 
-  activarBotonColor(): void {
-    // this.isLoading = true;
+  getPaisBotonColor(): void {
+    this.isLoading = true;
     this.paisService.getPaises().subscribe((resp: any) => {
       this.paises = resp.countries;
       // console.log(this.paises);
-      // this.isLoading = false;
+      this.isLoading = false;
       this.highlightActiveCountries();
     });
   }

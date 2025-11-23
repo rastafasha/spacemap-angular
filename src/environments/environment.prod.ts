@@ -9,6 +9,6 @@ export const environment = {
     //remoto v2
    url_backend: 'https://nobel.malcolmcordova.com/backend-api-mapaspace/',
     url_servicios: 'https://nobel.malcolmcordova.com/backend-api-mapaspace/public/api',
-    // url_frontend: 'https://mapaconcentracion.sinmordaza.org/',
+    url_frontend: 'https://elnobelesnuestro.com/',
     url_media: 'https://nobel.malcolmcordova.com/backend-api-mapaspace/public/storage/',
 };

@@ -37,7 +37,7 @@
 }
 
 .list{
-    width: max-content;
+    /* width: max-content; */
     color: var(--azullogo);
     max-height: 300px;
     overflow-y: auto;

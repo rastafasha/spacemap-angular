@@ -51,13 +51,14 @@ public user;
   public PageSize(): void {
     this.getPaises();
     this.query = '';
+    this.mapaService.filter('refreshPaisBotonColor');
   }
 
   getPaises(){
     this.isLoading = true;
     this.paisService.getPaisesRecientes().subscribe((resp: any) => {
       this.paises = resp.countries;
-      console.log(this.paises);
+      // console.log(this.paises);
       this.isLoading = false;
     });
   }
