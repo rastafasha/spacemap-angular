@@ -5,10 +5,6 @@
 
 /*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
-.mantengase {
-    background-color: #fff;
-    height: auto;
-}
 
 .contenedor {
     padding: 60px 0px;
@@ -17,34 +13,8 @@
     color: #333;
 }
 
-.mantengase h1 {
-    font-size: 84px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-}
 
-.mantengase h2 {
-    font-size: 60px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-
-.mantengase p {
-    padding-top: 10px;
-    width: 80%;
-}
-
-.mantengase h3 {
-    font-size: 40px;
-    border-left: 6px solid #fff;
-    padding-left: 10px;
-    color: #fff;
-}
-
-.soluciones {
+.listado {
 
     padding: 30px;
     height: 70vh;
@@ -102,7 +72,7 @@
         opacity: .5;
         width: 60vw;
     }
-    .soluciones {
+    .listado {
         padding: 30px;
         height: calc(80vh);
         width: 90vw;
@@ -114,11 +84,11 @@
     }
 }
 
-.soluciones .row {
+.listado .row {
     margin-bottom: 40px;
 }
 
-.soluciones-inicio {
+.listado-inicio {
     padding: 0px;
     height: 0px;
     top: 0;
@@ -145,52 +115,29 @@
 }
 
 .marketing p,
-.mantengase p,
 .final .info2 p,
-.soluciones p,
+.listado p,
 .web .info2 p {
     font-size: 14px;
 }
 
 @media(max-width:768px) {
-    .mantengase .partner {
-        width: 60%;
-        height: auto;
-        margin-bottom: 40px;
-        position: relative;
-    }
+    
     .icon-info .info-icon p {
         font-size: 16px;
         color: #000;
     }
-    .mantengase h1 {
-        font-size: 64px;
-    }
-    .mantengase {
-        background-color: #fff;
-        height: auto;
-        overflow: hidden;
-        overflow-x: scroll;
-        overflow-y: scroll;
-    }
-    .soluciones {
+    .listado {
         padding: 30px 15px;
     }
 }
 
 @media(min-width:769px) {
-    .mantengase .partner {
-        width: 60%;
-        height: 34px;
-        margin: 0 auto;
-        margin-bottom: 40px;
-        position: relative;
-        top: 80px;
-    }
+    
 }
 
 @media(min-width:1600px) {
-    .soluciones {
+    .listado {
         top: 220px;
     }
 }

@@ -146,8 +146,8 @@
 @media (max-width:768px) {
     .texto {
         width: auto;
-        right: 10%;
-        top: 140px;
+        right: 5%;
+        top: 20px;
     }
     .texto .logo {
         width: 50%;
