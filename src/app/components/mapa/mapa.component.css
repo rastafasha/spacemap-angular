@@ -76,6 +76,10 @@ svg {
     margin: 0 auto;
 }
 
+svg:not(:root) {
+    overflow: visible !important;
+}
+
 @media (max-width:668px) {
     .areamapa {
         width: 100vw;
@@ -114,10 +118,19 @@ svg {
 }
 
 @media (min-width:1400px) {
+    
     .areamapa svg {
-        transform: scale(1);
-        left: calc(15%);
-        top: calc(5%);
+        transform: scale(.8);
+        left: calc(11%);
+        top: calc(0%);
+    }
+}
+
+@media (min-width:1400px)  and (max-height:590px) {
+    .areamapa svg {
+        transform: scale(.8);
+        left: calc(11%);
+        top: calc(0%);
     }
 }
 

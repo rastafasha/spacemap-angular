@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
   @Input() paiseslists: PaisResponsive;
  error: {};
 
+ mostrarinfo: boolean = false;
+ mostrarvideo: boolean = false;
+ mostrarcontact: boolean = false;
+
  constructor(){ }
 
   ngOnInit(): void {
@@ -36,6 +40,29 @@ export class HomeComponent implements OnInit {
         // console.log(colorPais)
 
       }
+  }
+  abrirModalInfo(){
+    this.mostrarinfo = true;
+  }
+
+  closemodalInfo(){
+    this.mostrarinfo = false;
+  }
+
+  abrirModalVideo(){
+    this.mostrarvideo = true;
+  }
+
+  closemodalVideo(){
+    this.mostrarvideo = false;
+  }
+
+  abrirModalContact(){
+    this.mostrarcontact = true;
+  }
+
+  closemodalContact(){
+    this.mostrarcontact = false;
   }
 
 
