@@ -106,8 +106,8 @@ svg:not(:root) {
         overflow-x: scroll;
         overflow-y: scroll;
         width: 270%;
-        transform: scale(.6);
-        left: calc(-1%);
+        transform: scale(.8);
+        left: -24%;
         top: calc(5%);
     }
 
